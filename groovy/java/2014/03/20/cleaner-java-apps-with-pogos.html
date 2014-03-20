@@ -22,7 +22,7 @@
           </div>
 
           <h2>Using Groovy to make for better domain objects in a Java application</h2>
-<p class="meta">16 Mar 2014</p>
+<p class="meta">20 Mar 2014</p>
 
 <div class="post">
 <p>Have you ever considered how we write Plain Old Java Objects? <a href="http://en.wikipedia.org/wiki/Plain_Old_Java_Object">POJOs</a>, if coded correctly they are just objects to contain state, along with methods to access, modify and compare instances to other instances. Nothing more. The methods are coded the same for every POJO. Since this is so common we have wizards and generators in the editors for a more enjoyable experience. The generators work well, however they create a lot noise in the code that needs to be maintained. Just make sure you generate that hashCode when you generate that equals, or the Java gods will get mad for breaking their <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#equals(java.lang.Object)">contract</a>. Every time you add a new member variable, you need to add new getter/setter, regenerate the hashCode and equals and sometimes even the toString. Afterwards you version control the changes, which may lead to merge conflicts or errors. </p>
